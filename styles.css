@@ -1,0 +1,88 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: blue;
+  text-align: center;
+  padding: 50px;
+}
+
+nav ul {
+  background-color: black;
+  list-style-type: none;
+  text-align: center;
+  padding:40px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.social{
+  text-align: center;
+}
+
+.white{
+  background-color:blue;
+  color: rgb(255, 255, 255);
+}
+
+.home button{
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: right;
+
+}
+
+.add{
+  display: flex;
+  
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid #ccc;
+    flex-direction: column;
+  
+}
+
+.direction-view{
+  display: flex;
+  flex-direction: row;
+}
+.home{
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
