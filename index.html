@@ -5,22 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>PulseDigitalWidth - Home</title>
+    <style>
+    header {
+  background-color: rgb(187, 187, 243);
+  text-align: center;
+  padding: 10px;
+  height: 6vh;
+
+
+}
+    
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+        padding:10px;
+      }
+      
+      nav ul li {
+        display: inline;
+        margin: 10px;
+      }
+      
+      nav a {
+        text-decoration: none;
+        transition: color 0.3s;
+        color: black;
+      }
+      
+      nav a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+
+       .logo{
+            margin-left: 1px;
+            text-align: left;
+             float: left;
+        }
+        .logo logo{
+            margin-left: 17px;
+            color: black;
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: 25px;
+        }
+        .logo h4{
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 21px;
+            margin-top: 3px;
+        }
+      .h1{
+        text-align: center;
+        margin-top: 80px;
+        border: solid white;
+        width: 50%;
+        padding: 13px;
+        margin-left: 27%;
+        background-color: white;
+        color: black;
+      }
+      .h1 h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 55px;
+      }
+      .word-container{
+       
+        width: 200px;
+            overflow: hidden;
+            margin-left: 40%;
+      }
+      .word-list h1{
+        text-decoration:none ;
+        font-family: impact;
+        font-size: 50px;
+        color: black;
+      }
+      .word-list {
+            display: column;
+            animation: slideWords 3s forwards; /* Adjust the duration based on your preference */
+            
+        }
+        @keyframes slideWords {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(5%);
+            }
+            100% {
+                transition: left to right;
+            }
+            
+        }/*keyframe to make it move*/
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to PulseWidth Digital</h1>
+        <div class="logo">
+            <logo><i><b>PulseWidth Digital</b></i></logo>
+            <h4>Marketing & Branding</h4>
+        </div>
+     <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">contacts</a></li>
+            </ul>
+        </nav>
+    </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="blog.html">contacts</a></li>
-        </ul>
-    </nav>
+    <div class="h1" >
+        <h1>PulseWidth Digital</h1>
+    </div>
+    
+    
     <main>
         <p>Welcome to PulseWidth Digital. We help businesses grow.</p>
     </main>
+
+   <div class="word-container">
+  <div class="word-list">
+    <h1>PLANNING</h1><br>
+  </div>
+    <div class="word-list">
+    <h1>STRATEGY</h1><br>
+    </div>
+    <div class="word-list">
+    <h1>RESULTS</h1>
+</div>
+</div>
+</body>
+<script>
+  // JavaScript to control the animation timings
+  const wordList = document.querySelector('.word-list');
+  const words = wordList.children;
+
+  let currentIndex = 0;
+
+  function slideNextWord() {
+      words[currentIndex].style.animation = Float32Array; // Reset animation
+      void words[currentIndex].offsetWidth; // Trigger reflow
+      words[currentIndex].style.animation = fetch; // Reapply animation
+
+      currentIndex = (currentIndex + 1) % words.length;
+      words[currentIndex].style.animation = 'slideWords 3s forwards';
+  }
+
+  // Start the initial animation
+  slideNextWord(1);
+
+  // Set interval for sliding in the next word every 3 seconds
+  setInterval(slideNextWord, 3000);
+</script>
+
     <footer>
         <p>&copy; 2023 PulseDigitalWidth</p>
     </footer>

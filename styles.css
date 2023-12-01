@@ -1,21 +1,14 @@
 body {
-  background-color: black;
+  background-color:#645de9c5;
   color: white;
   font-family: Arial, sans-serif;
   margin: 0;
 }
 
-header {
-  background-color: blue;
-  text-align: center;
-  padding: 50px;
-}
-
 nav ul {
-  background-color: black;
   list-style-type: none;
   text-align: center;
-  padding:40px;
+  padding:10px;
 }
 
 nav ul li {
@@ -25,12 +18,15 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   transition: color 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 nav a:hover {
-  color: blue;
+  color: white;
+  text-decoration: underline;
 }
 
 main {
@@ -56,14 +52,24 @@ footer {
   color: rgb(255, 255, 255);
 }
 
-.home button{
+.button{
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    float: right;
+    margin-left: 87%;
+}
+.button button{
+  background-color:blue;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
 
 }
-
+.button button a{
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
 .add{
   display: flex;
   
@@ -71,8 +77,9 @@ footer {
     margin: 15px;
     border: 2px solid #ccc;
     flex-direction: column;
-  
+   
 }
+
 
 .direction-view{
   display: flex;
@@ -86,3 +93,6 @@ footer {
   padding: 10px;
   border-radius: 5px;
 }
+
+
+

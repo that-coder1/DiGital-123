@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>PulseDigitalWidth - Services</title>
     <style>
         body {
-            background-color: black;
+            
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
         }
 
         header {
-            background-color: blue;
+            background-color: rgb(187, 187, 243);
             text-align: center;
-            padding: 50px;
+            padding: 10px;
         }
 
         nav ul {
-            background-color: black;
             list-style-type: none;
             text-align: center;
         }
@@ -31,12 +31,13 @@
 
         nav a {
             text-decoration: none;
-            color: white;
+            color: ;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: blue;
+            color: white;
+            text-decoration: underline;
         }
 
         main {
@@ -74,12 +75,36 @@
             background-color: #007BFF;
             cursor: pointer;
         }
+        .logo{
+            margin-left: 1px;
+            text-align: left;
+             float: left;
+        }
+        .logo logo{
+            margin-left: 17px;
+            color: black;
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: 25px;
+        }
+        .logo h4{
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 21px;
+            margin-top: 3px;
+        }
+        h1{
+            text-align: center;
+        }
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>Our Services</h1>
-    </header>
+        <div class="logo">
+        <logo><i><b>PulseWidth Digital</b></i></logo>
+        <h4>Marketing & Branding</h4>
+    </div>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -88,6 +113,9 @@
             <li><a href="blog.html">contacts</a></li>
         </ul>
     </nav>
+</header>
+
+<h1>Our Services</h1>
     <main>
         <section class="service" onclick="document.location='social mm.html'">
             <h2 a href="">Social Media Marketing</h2>
